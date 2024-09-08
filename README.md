@@ -4,7 +4,16 @@
 
 This project is an end-to-end business intelligence solution developed for a client assigned by getINNOtized. The client has collected transactional data for the year 2019 but has not yet utilized it effectively. The goal is to analyze the data and provide a comprehensive report to identify sales opportunities and operational efficiencies.
 
-### Key Objectives:
+### Project Objectives
+The objective of this project is to develop an end-to-end business intelligence solution to analyze the client’s 2019 transactional data and identify key insights to drive sales growth and improve operational efficiency. This solution aims to help the client make data-driven decisions that optimize product offerings, improve profitability, and streamline operations across various regions.
+
+To achieve this objective, the following were undertaken following the CRISP-DM Framework:
+1. Data Extraction and Cleaning.
+2. Hypothesis Testing
+3. Power Bi Deloyment 
+4. Streamlit App Building
+
+### Business Questions:
 1. Determine the total revenue generated in 2019.
 2. Identify seasonality in the sales patterns.
 3. Highlight the best and worst-selling products.
@@ -14,6 +23,23 @@ This project is an end-to-end business intelligence solution developed for a cli
 7. Provide additional insights based on data exploration.
 
 Additionally, products priced above $99.99 are classified as **High-Level Products**, while those priced lower are classified as **Basic-Level Products**.
+
+
+### Hypothesis Testing
+- **Null Hypothesis (H₀)**: There is no significant relationship between unit price and sales.
+- **Alternative Hypothesis (H₁)**: There is a significant relationship between unit price and sales.
+
+### Results
+- **Pearson Correlation Coefficient**: 1.00
+- **Coefficient for Price_Each**: 0.9998
+- **P-value for Price_Each**: 0.000
+
+The p-value for the Price_Each coefficient is 0.000, which is well below the common significance level of 0.05. This indicates that the relationship between unit price and sales volume is statistically significant.
+
+### Conclusion
+Since the p-value is much less than 0.05, we reject the Null Hypothesis (H₀) and accept the Alternative Hypothesis (H₁). This suggests that there is a significant relationship between unit price and sales volume. The Pearson Correlation Coefficient of 1.00 further supports this, showing a very strong positive linear relationship between the two variables.
+
+This means that changes in unit price are significantly associated with changes in sales volume, according to this regression model.
 
 ## Data and Variable Description
 
@@ -43,6 +69,6 @@ This project was developed by [Your Name](mailto:your.email@example.com). Connec
 
 ## Project Links Table
 
-| Code  | Project Name               | Power BI Link                          | Published Link                      |
+| Code  | Project Name               | Power BI Link                          | Published App Link                      |
 |-------|-----------------------------|----------------------------------------|-------------------------------------|
-| BI001 | 2019 Sales Analysis         | [Power BI Dashboard](https://link-to-powerbi) | [Published Report](https://link-to-report) |
+| P5 | 2019 Sales Analysis         | [Power BI Dashboard](https://link-to-powerbi) | [Published Report](https://link-to-report) |
