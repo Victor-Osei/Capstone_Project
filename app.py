@@ -88,6 +88,32 @@ if options == "Home":
         identifying seasonal trends, and improving sales strategies. 
         Through this app, you can explore various dimensions of sales, from product performance to city-wise distributions.
     """)
+    # Contact and GitHub Repository
+    st.subheader("Need Help or Collaboration?")
+    st.markdown("""
+    For collaboration or support, please contact Team_Fiji.
+""")
+
+# Create a clickable button to GitHub
+    github_url = "https://github.com/Victor-Osei/Capstone_Project"
+    st.markdown(f"""
+    <a href="{github_url}" target="_blank">
+        <button style="background-color:#4CAF50; color:white; padding:10px 20px; 
+                        text-align:center; text-decoration:none; display:inline-block; 
+                        font-size:16px; margin:4px 2px; cursor:pointer; border:none;">
+            Visit Our GitHub Repository
+        </button>
+    </a>
+    """, unsafe_allow_html=True)
+
+
+    # # Contact and Github Repository
+    # st.subheader("Need Help or Collaboration?")
+    # st.markdown("""
+    #     For collaboration or support, please contact Team_Fiji.
+    # """)
+    # st.button("Visit Our GitHub Repository")
+    # st.markdown("[GitHub Repository](https://github.com/Victor-Osei/Capstone_Project")
     
 # Sales Page
 elif options == "Sales Overview":
