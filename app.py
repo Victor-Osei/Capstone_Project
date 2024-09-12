@@ -61,7 +61,7 @@ if options == "Home":
     st.title("📊 2019 Sales & Efficiency BI Solution")
 
 # Add a banner image
-    st.image("images\sales-two-mannequin-models-7fv2ter9c2utphqz.jpg", use_column_width=True)  # Replace with your image URL
+    st.image("images\Gadget7.jpg", use_column_width=True)  # Replace with your image URL
 
 
     # Introduction about the app
