@@ -6,3 +6,5 @@ matplotlib
 seaborn
 statsmodels
 scipy
+streamlit
+plotly
