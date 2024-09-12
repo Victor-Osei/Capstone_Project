@@ -116,14 +116,19 @@ elif options == "Sales Overview":
     high_level_sales = round(data[data['Price_Each'] > 99.99]['Sales'].sum(), 2)
     basic_level_sales = round(data[data['Price_Each'] <= 99.99]['Sales'].sum(), 2)    
 
-    st.metric(label="Total Sales (2019)", value=total_sales)
-    st.metric(label="High-Level Product Sales (>$99.99)", value=high_level_sales)
+    # Format the numbers as money values with $ and commas
+    total_sales_formatted = f"${total_sales:,.2f}"
+    high_level_sales_formatted = f"${high_level_sales:,.2f}"
+    basic_level_sales_formatted = f"${basic_level_sales:,.2f}"
+
+    st.metric(label="Total Sales (2019)", value=total_sales_formatted)
+    st.metric(label="High-Level Product Sales (>$99.99)", value=high_level_sales_formatted)
     
     # Show percentage of high-level product sales
     percentage_of_high_level_products = (high_level_sales / total_sales)  
     st.progress(percentage_of_high_level_products)  # Display the progress bar
     
-    st.metric(label="Basic-Level Product Sales (<=$99.99)", value=basic_level_sales)
+    st.metric(label="Basic-Level Product Sales (<=$99.99)", value=basic_level_sales_formatted)
     
     # Show percentage of basic-level product sales
     percentage_of_basic_level_products = (basic_level_sales / total_sales)  
