@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import random
 
-# Set custom theme for dark royal blue
+# Set Webpage Name
 st.set_page_config(page_title="2019 BI Solution for Sales & Efficiency", page_icon="📊", layout="wide")
 
 
@@ -32,15 +32,15 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Sidebar Navigation
-st.sidebar.title("2019 BI Solution")
+st.sidebar.title("2019 Sales BI Solution")
 st.sidebar.subheader("Navigation")
 options = st.sidebar.radio("Go to", ["Sales Overview", "Product Analysis", "City Insights", "Seasonality Trends"])
 
 # Random Sales Fact
 random_facts = [
-    "Did you know? Our highest sales occurred in May 2019.",
-    "Fun fact: Products priced above $99.99 generate 40% more revenue.",
-    "Surprising stat: The city with the highest number of deliveries is New York!",
+    "Did you know? Our highest sales occurred in April 2019.",
+    "Fun fact: Products priced above $99.99 generated more revenue.",
+    "Surprising stat: The city with the highest number of deliveries is San Francisco!",
     "Tip: Sales peaks during holidays, plan your inventory accordingly."
 ]
 st.sidebar.markdown(f"💡 *Random Fact:* {random.choice(random_facts)}")
@@ -48,7 +48,7 @@ st.sidebar.markdown(f"💡 *Random Fact:* {random.choice(random_facts)}")
 # Load the dataset (df_2019.csv)
 @st.cache_data
 def load_data():
-    data = pd.read_csv('df_2019.csv')  # Replace with the actual path if needed
+    data = pd.read_csv('df_2019.csv')
     return data
 
 data = load_data()
@@ -124,8 +124,6 @@ elif options == "City Insights":
     # City-wise sales distribution using a pie chart
     fig = px.pie(city_sales, names="City", values="Sales", title="City-wise Sales Distribution (2019)")
     st.plotly_chart(fig, use_container_width=True)
-    
-    st.success(f"The city with the highest deliveries is *{city_sales.loc[city_sales['Sales'].idxmax(), 'City']}*.")
 
 elif options == "Seasonality Trends":
     st.title("📅 Seasonality Trends")
@@ -137,6 +135,7 @@ elif options == "Seasonality Trends":
     
     # Display a line chart for monthly sales trends
     fig = px.line(monthly_sales, x="Month", y="Sales", title="Monthly Sales in 2019")
+    fig.update_layout(title={'x': 0.5})  # Center the title
     st.plotly_chart(fig, use_container_width=True)
     
     st.info("Note: Seasonal insights help improve stock and marketing strategies.")
