@@ -107,14 +107,6 @@ if options == "Home":
     """, unsafe_allow_html=True)
 
 
-    # # Contact and Github Repository
-    # st.subheader("Need Help or Collaboration?")
-    # st.markdown("""
-    #     For collaboration or support, please contact Team_Fiji.
-    # """)
-    # st.button("Visit Our GitHub Repository")
-    # st.markdown("[GitHub Repository](https://github.com/Victor-Osei/Capstone_Project")
-    
 # Sales Page
 elif options == "Sales Overview":
     st.title("📊 Sales Overview: 2019")
