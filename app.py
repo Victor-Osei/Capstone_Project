@@ -112,9 +112,9 @@ elif options == "Sales Overview":
     st.title("📊 Sales Overview: 2019")
     
     # Summarize total sales
-    total_sales = data['Sales'].sum()
-    high_level_sales = data[data['Price_Each'] > 99.99]['Sales'].sum()
-    basic_level_sales = data[data['Price_Each'] <= 99.99]['Sales'].sum()    
+    total_sales = round(data['Sales'].sum(), 2)
+    high_level_sales = round(data[data['Price_Each'] > 99.99]['Sales'].sum(), 2)
+    basic_level_sales = round(data[data['Price_Each'] <= 99.99]['Sales'].sum(), 2)    
 
     st.metric(label="Total Sales (2019)", value=total_sales)
     st.metric(label="High-Level Product Sales (>$99.99)", value=high_level_sales)
