@@ -60,15 +60,15 @@ To set up and run the Power BI dashboard, follow these steps:
 
 1. Clone the repository or download the files.
 2. Download Power BI Desktop from [Power BI Download Center](https://powerbi.microsoft.com/downloads/).
-3. Use the provided CSV data for the first 6 months from the link, and configure the database connection for the remaining data.
+3. Use the provided CSV data for the first 6 months from the Onedrive link, and configure the database connection for the second 6 months data.
 4. Open the Power BI file (.pbix) to load the dashboard and view the insights.
 
 ## Author
 
-This project was developed by [Your Name](mailto:your.email@example.com). Connect with me on [LinkedIn](https://www.linkedin.com/in/yourprofile).
+This project was developed by [Team_Fiji](mailto:your.email@example.com). Connect with me on [LinkedIn](https://www.linkedin.com/in/victor-osei-duah-a9182a13a/).
 
 ## Project Links Table
 
 | Code  | Project Name               | Power BI Link                          | Published App Link                      |
 |-------|-----------------------------|----------------------------------------|-------------------------------------|
-| P5 | 2019 Sales Analysis         | [Power BI Dashboard](https://link-to-powerbi) | [Published Report](https://link-to-report) |
+| LP5 | Power BI Dashboard Project (2019 Sales Analysis) | [Power BI Dashboard](https://app.powerbi.com/groups/me/reports/ae796325-9ee2-4d2c-bf29-5c99ad3fae03/d79d9368ed0162806e59?experience=power-bi) | [Published Report](https://link-to-report) |
