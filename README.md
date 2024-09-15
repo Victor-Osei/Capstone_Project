@@ -71,4 +71,4 @@ This project was developed by [Team_Fiji](mailto:your.email@example.com). Connec
 
 | Code  | Project Name               | Power BI Link                          | Published App Link                      |
 |-------|-----------------------------|----------------------------------------|-------------------------------------|
-| LP5 | Power BI Dashboard Project (2019 Sales Analysis) | [Power BI Dashboard](https://app.powerbi.com/groups/me/reports/ae796325-9ee2-4d2c-bf29-5c99ad3fae03/d79d9368ed0162806e59?experience=power-bi) | [Published Report](https://link-to-report) |
+| LP5 | Power BI Dashboard Project (2019 Sales Analysis) | [Power BI Dashboard](https://app.powerbi.com/groups/me/reports/ae796325-9ee2-4d2c-bf29-5c99ad3fae03/d79d9368ed0162806e59?experience=power-bi) | [Published App](https://victor-osei-capstone-project-app-tiriqx.streamlit.app/) |
