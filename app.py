@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import random
+import os
 
 # Set Webpage Name
 st.set_page_config(page_title="2019 BI Solution for Sales & Efficiency", page_icon="📊", layout="wide")
@@ -61,7 +62,12 @@ if options == "Home":
     st.title("📊 2019 Sales & Efficiency BI Solution")
 
 # Add a banner image
-    st.image("images\Gadget7.jpg", use_column_width=True)  # Replace with your image URL
+    st.image("images/Gadget7.jpg", use_column_width=True)  # Replace with your image URL
+    # st.image(os.path.abspath("images/Gadget7.jpg"), use_column_width=True)
+
+
+
+    assert os.path.exists("images/Gadget7.jpg"), "File not found"
 
 
     # Introduction about the app
